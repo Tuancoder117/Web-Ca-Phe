@@ -1,0 +1,183 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #333;
+  background-color:#e3d3c0;
+}
+
+/* Header */
+.header {
+  background-color: #5A3E2B;
+  color: white;
+  padding: 16px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 24px;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* Contact section */
+.contact-section {
+  padding: 50px 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-section h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #5A3E2B;
+}
+
+.contact-form {
+  background: #FDF9F3;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #5A3E2B;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #B1784D;
+  outline: none;
+  box-shadow: 0 0 4px rgba(181, 120, 77, 0.4);
+}
+
+button[type="submit"] {
+  background-color: #5A3E2B;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #7b543c;
+}
+
+@media screen and (max-width: 900px) {
+  .danh-muc-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .danh-muc .box {
+    margin: 10px 0;
+    width: 80%;
+  }
+
+  .san-pham-list {
+    flex-direction: column;
+  }
+
+  .san-pham .item {
+    width: 80%;
+    max-width: 250px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  /* Ẩn logo */
+  .logo {
+    display: none;
+  }
+
+  /* Giữ menu nằm ngang và canh giữa */
+  .header {
+    justify-content: center;
+    padding: 12px 10px;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .nav a {
+    margin: 8px 12px;
+    font-size: 10px;
+  }
+}
+
+/* Nút menu 3 gạch (ẩn trên desktop) */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Responsive cho mobile */
+@media screen and (max-width: 900px) {
+  .logo {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    background-color: #5A3E2B;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .nav.show {
+    display: flex;
+  }
+
+  .nav a {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 20px;
+  }
+}

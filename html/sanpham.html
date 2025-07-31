@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sản Phẩm - Cà Phê Ngon</title>
+  <link rel="stylesheet" href="../css/sanpham.css">
+  <script>
+  function toggleMenu() {
+    const nav = document.getElementById('mainNav');
+    nav.classList.toggle('show');
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Header -->
+<header class="header">
+  <div class="logo">Cà Phê Ngon</div>
+  
+  <!-- Nút menu 3 gạch -->
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  
+  <nav class="nav" id="mainNav">
+    <a href="index.html">TRANG CHỦ</a>
+    <a href="uudai.html">ƯU ĐÃI</a>
+    <a href="lienhe.html">LIÊN HỆ</a>
+    <a href="dangnhap.html">ĐĂNG NHẬP</a>
+    <a href="giohang.html">GIỎ HÀNG</a>
+  </nav>
+</header>
+
+
+  <!-- Danh sách sản phẩm -->
+  <section class="product-section">
+    <h1>Sản Phẩm Nổi Bật</h1>
+    <div class="product-grid">
+      
+      <div class="product-card">
+        <img src="../anh/caffeDen.jpg" alt="Cà phê đen">
+        <h3>Cà Phê Đen</h3>
+        <p>Đậm đà, nguyên chất 100%</p>
+        <span class="price">35.000₫</span>
+        <button>Mua ngay</button>
+      </div>
+
+      <div class="product-card">
+        <img src="../anh/caffeSua.jfif" alt="Latte">
+        <h3>Cà Phê Latte</h3>
+        <p>Thơm béo, mềm mịn</p>
+        <span class="price">40.000₫</span>
+        <button>Mua ngay</button>
+      </div>
+
+      <div class="product-card">
+        <img src="../anh/caffeHat.jpg" alt="Capuchino">
+        <h3>Capuchino</h3>
+        <p>Đậm vị Ý, hậu ngọt thanh</p>
+        <span class="price">45.000₫</span>
+        <button>Mua ngay</button>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>

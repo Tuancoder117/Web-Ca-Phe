@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ưu đãi - Cà Phê Ngon</title>
+  <link rel="stylesheet" href="../css/uudai.css">
+  
+  <script>
+  function toggleMenu() {
+    const nav = document.getElementById('mainNav');
+    nav.classList.toggle('show');
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+  <div class="logo">Cà Phê Ngon</div>
+  
+  <!-- Nút menu 3 gạch -->
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  
+  <nav class="nav" id="mainNav">
+    <a href="index.html">TRANG CHỦ</a>
+    <a href="uudai.html">ƯU ĐÃI</a>
+    <a href="lienhe.html">LIÊN HỆ</a>
+    <a href="dangnhap.html">ĐĂNG NHẬP</a>
+    <a href="giohang.html">GIỎ HÀNG</a>
+  </nav>
+</header>
+
+
+  <!-- Ưu đãi -->
+  <section class="uudai">
+    <h1>ƯU ĐÃI ĐẶC BIỆT</h1>
+    <div class="product-list">
+      
+      <!-- Sản phẩm ưu đãi -->
+      <div class="product">
+        <img src="../anh/aribaca.jpg" alt="Cà phê ưu đãi">
+        <h3>Cà Phê Hạt Arabica</h3>
+        <p class="price">
+          <span class="old-price">180.000đ</span>
+          <span class="new-price">120.000đ</span>
+          <button>Xem thêm</button>
+        </p>
+      </div>
+
+      <div class="product">
+        <img src="../anh/caffeLacVuong.jpg" alt="Cà phê ưu đãi">
+        <h3>Cà Phê Lạc Vương</h3>
+        <p class="price">
+          <span class="old-price">370.000đ</span>
+          <span class="new-price">320.000đ</span>
+          <button>Xem thêm</button>
+        </p>
+      </div>
+
+      <div class="product">
+        <img src="../anh/moka.jpg" alt="Cà phê ưu đãi">
+        <h3>Cà Phê Moka Premium</h3>
+        <p class="price">
+          <span class="old-price">450.000đ</span>
+          <span class="new-price">390.000đ</span>
+          <button>Xem thêm</button>
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>

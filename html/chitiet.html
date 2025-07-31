@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chi tiết sản phẩm</title>
+  <link rel="stylesheet" href="../css/chitiet.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">Cà Phê Ngon</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav class="nav" id="mainNav">
+      <a href="index.html">TRANG CHỦ</a>
+      <a href="uudai.html">ƯU ĐÃI</a>
+      <a href="lienhe.html">LIÊN HỆ</a>
+      <a href="dangnhap.html">ĐĂNG NHẬP</a>
+      <a href="giohang.html">GIỎ HÀNG</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="product-preview">
+      <img class="main-img" src="../anh/caffeHat.jpg" alt="Cà phê hạt" />
+      <div class="thumbs">
+        <img src="../anh/caffeHat.jpg" />
+        <img src="../anh/caffeSua.jfif" />
+        <img src="../anh/caffeRangXayCC.jpg" />
+        <img src="../anh/caffeHoaTan.jpg" />
+      </div>
+    </div>
+    <div class="product-info">
+      <h1>Cà Phê Hạt Nguyên Chất Rang Mộc</h1>
+      <p class="sku">Mã sản phẩm: CF001</p>
+      <p class="rating">⭐ 4.9 | <span>1.200 lượt bán</span> | <a href="#">Xem đánh giá</a></p>
+      <div class="price">
+        <span>500.000 đ</span>
+        <del>600.000 đ</del>
+        <div class="discount">-17%</div>
+      </div>
+      <div class="option-group">
+        <label>Khối lượng:</label>
+        <div class="options">
+          <button>250g</button>
+          <button class="active">500g</button>
+          <button>1kg</button>
+        </div>
+      </div>
+      <div class="quantity">
+        <label>Số lượng:</label>
+        <input type="number" min="1" value="1" />
+      </div>
+      <div class="actions">
+        <button id="showBtn" class="add-cart"><i class="fas fa-cart-plus"></i> Thêm vào giỏ hàng</button>
+        <!-- Thông báo sau khi bấm vào nut Thêm vào giỏ hàng -->
+        <div id="customAlert" class="alert-box"> 
+          Đã thêm vào giỏ hàng!
+        </div>
+        <a href="giohang.html"><button class="buy-now">MUA NGAY</button></a>
+      </div>
+        <div class="desc-box">
+          <h2>Mô tả sản phẩm</h2>
+          <p>
+            Cà phê hạt rang mộc nguyên chất từ cao nguyên Đắk Lắk. Không tẩm ướp, không phụ gia, giữ trọn vị đắng thanh, thơm nồng đặc trưng của cà phê Việt.
+            Thích hợp pha máy, pha phin, dùng tại nhà hoặc làm quà tặng.
+          </p>
+        </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="reviews-section">
+      <h1>Đánh giá sản phẩm</h1>
+      <div class="summary">
+        <div class="avg-rating">
+          <div class="score">4.8</div>
+          <div class="stars">★★★★☆</div>
+          <p>1.235 lượt đánh giá</p>
+        </div>
+        <div class="rating-bars">
+          <div class="bar"><span>5★</span><div class="progress" style="width: 80%"></div><span>900</span></div>
+          <div class="bar"><span>4★</span><div class="progress" style="width: 12%"></div><span>135</span></div>
+          <div class="bar"><span>3★</span><div class="progress" style="width: 5%"></div><span>65</span></div>
+          <div class="bar"><span>2★</span><div class="progress" style="width: 2%"></div><span>25</span></div>
+          <div class="bar"><span>1★</span><div class="progress" style="width: 1%"></div><span>10</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scrol">
+      <div class="reviews">
+      <div class="review">
+        <div class="user-info">
+          <strong>Nguyễn Văn A</strong>
+          <span>25/07/2025</span>
+        </div>
+        <div class="stars">★★★★★</div>
+        <p>Cà phê rất thơm và đậm vị. Giao hàng nhanh, đóng gói đẹp!</p>
+      </div>
+      <div class="review">
+        <div class="user-info">
+          <strong>Trần Thị B</strong>
+          <span>22/07/2025</span>
+        </div>
+        <div class="stars">★★★★☆</div>
+        <p>Hàng tốt nhưng giao hơi chậm. Vị cà phê mộc, không bị đắng gắt.</p>
+      </div>
+      <div class="review">
+        <div class="user-info">
+          <strong>Hoàng C</strong>
+          <span>20/07/2025</span>
+        </div>
+        <div class="stars">★★★☆☆</div>
+        <p>Ổn nhưng không quá đặc biệt. Bao bì đẹp.</p>
+      </div>
+
+            <div class="review">
+        <div class="user-info">
+          <strong>Nguyễn Văn Kiên</strong>
+          <span>25/06/2025</span>
+        </div>
+        <div class="stars">★★★☆☆</div>
+        <p>Cà phê đậm vị. Nhưng hậu vị ngọt gắt!</p>
+      </div>
+      <div class="review">
+    </div>
+        <div class="review">
+        <div class="user-info">
+          <strong>Nguyễn Văn A</strong>
+          <span>25/07/2025</span>
+        </div>
+        <div class="stars">★★★★★</div>
+        <p>Cà phê rất thơm và đậm vị. Giao hàng nhanh, đóng gói đẹp!</p>
+      </div>
+      <div class="review">
+        <div class="user-info">
+          <strong>Trần Thị B</strong>
+          <span>22/07/2025</span>
+        </div>
+        <div class="stars">★★★★☆</div>
+        <p>Hàng tốt nhưng giao hơi chậm. Vị cà phê mộc, không bị đắng gắt.</p>
+      </div>
+      <div class="review">
+        <div class="user-info">
+          <strong>Hoàng C</strong>
+          <span>20/07/2025</span>
+        </div>
+        <div class="stars">★★★☆☆</div>
+        <p>Ổn nhưng không quá đặc biệt. Bao bì đẹp.</p>
+      </div>
+
+            <div class="review">
+        <div class="user-info">
+          <strong>Nguyễn Văn Kiên</strong>
+          <span>25/06/2025</span>
+        </div>
+        <div class="stars">★★★☆☆</div>
+        <p>Cà phê đậm vị. Nhưng hậu vị ngọt gắt!</p>
+      </div>
+      <div class="review">
+    </div>
+        <div class="review">
+        <div class="user-info">
+          <strong>Nguyễn Văn A</strong>
+          <span>25/07/2025</span>
+        </div>
+        <div class="stars">★★★★★</div>
+        <p>Cà phê rất thơm và đậm vị. Giao hàng nhanh, đóng gói đẹp!</p>
+      </div>
+      <div class="review">
+        <div class="user-info">
+          <strong>Trần Thị B</strong>
+          <span>22/07/2025</span>
+        </div>
+        <div class="stars">★★★★☆</div>
+        <p>Hàng tốt nhưng giao hơi chậm. Vị cà phê mộc, không bị đắng gắt.</p>
+      </div>
+      <div class="review">
+        <div class="user-info">
+          <strong>Hoàng C</strong>
+          <span>20/07/2025</span>
+        </div>
+        <div class="stars">★★★☆☆</div>
+        <p>Ổn nhưng không quá đặc biệt. Bao bì đẹp.</p>
+      </div>
+
+            <div class="review">
+        <div class="user-info">
+          <strong>Nguyễn Văn Kiên</strong>
+          <span>25/06/2025</span>
+        </div>
+        <div class="stars">★★★☆☆</div>
+        <p>Cà phê đậm vị. Nhưng hậu vị ngọt gắt!</p>
+      </div>
+      <div class="review">
+    </div>
+        <div class="review">
+        <div class="user-info">
+          <strong>Nguyễn Văn A</strong>
+          <span>25/07/2025</span>
+        </div>
+        <div class="stars">★★★★★</div>
+        <p>Cà phê rất thơm và đậm vị. Giao hàng nhanh, đóng gói đẹp!</p>
+      </div>
+      <div class="review">
+        <div class="user-info">
+          <strong>Trần Thị B</strong>
+          <span>22/07/2025</span>
+        </div>
+        <div class="stars">★★★★☆</div>
+        <p>Hàng tốt nhưng giao hơi chậm. Vị cà phê mộc, không bị đắng gắt.</p>
+      </div>
+      <div class="review">
+        <div class="user-info">
+          <strong>Hoàng C</strong>
+          <span>20/07/2025</span>
+        </div>
+        <div class="stars">★★★☆☆</div>
+        <p>Ổn nhưng không quá đặc biệt. Bao bì đẹp.</p>
+      </div>
+
+            <div class="review">
+        <div class="user-info">
+          <strong>Nguyễn Văn Kiên</strong>
+          <span>25/06/2025</span>
+        </div>
+        <div class="stars">★★★☆☆</div>
+        <p>Cà phê đậm vị. Nhưng hậu vị ngọt gắt!</p>
+      </div>
+      <div class="review">
+    </div>
+    </div>
+    
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('mainNav');
+      nav.classList.toggle('show');
+    } // Hàm để bật/tắt menu/ ở giao diện di động
+
+    document.getElementById("showBtn").addEventListener("click", function() {
+      const alertBox = document.getElementById("customAlert");
+      alertBox.style.display = "block"; // Hiển thị thông báo
+
+    // Tự ẩn sau 3 giây
+    setTimeout(() => {
+      alertBox.style.display = "none";
+    }, 3000);
+  });
+  </script>
+</body>
+</html>

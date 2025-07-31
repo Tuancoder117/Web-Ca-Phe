@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng Ký - Cà Phê Ngon</title>
+  <link rel="stylesheet" href="../css/dangky.css">
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('mainNav');
+      nav.classList.toggle('show');
+    }
+  </script>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+  <div class="logo">Cà Phê Ngon</div>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  <nav class="nav" id="mainNav">
+    <a href="index.html">TRANG CHỦ</a>
+    <a href="uudai.html">ƯU ĐÃI</a>
+    <a href="lienhe.html">LIÊN HỆ</a>
+    <a href="dangnhap.html">ĐĂNG NHẬP</a>
+    <a href="giohang.html">GIỎ HÀNG</a>
+  </nav>
+</header>
+
+<!-- Form đăng ký -->
+<section class="signup-section">
+  <h1>TẠO TÀI KHOẢN MỚI</h1>
+  <form id="formDangKy" class="signup-form">
+    <div class="form-group">
+      <label for="name">Họ và tên</label>
+      <input type="text" id="name" name="hoten" placeholder="Nhập họ tên..." required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Nhập email..." required>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Mật khẩu</label>
+      <input type="password" id="password" name="matkhau" placeholder="Tạo mật khẩu..." required>
+    </div>
+
+    <div class="form-group">
+      <label for="confirm-password">Xác nhận mật khẩu</label>
+      <input type="password" id="confirm-password" name="xacnhan" placeholder="Nhập lại mật khẩu..." required>
+    </div>
+
+    <button type="submit">ĐĂNG KÝ</button>
+
+    <p class="note">Đã có tài khoản? <a href="dangnhap.html">Đăng nhập</a></p>
+  </form>
+</section>
+
+</body>
+</html>

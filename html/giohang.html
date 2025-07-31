@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giỏ Hàng - Cà Phê Ngon</title>
+  <link rel="stylesheet" href="../css/giohang.css">
+  <script>
+  function toggleMenu() {
+    const nav = document.getElementById('mainNav');
+    nav.classList.toggle('show');
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+  <div class="logo">Cà Phê Ngon</div>
+  
+  <!-- Nút menu 3 gạch -->
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  
+  <nav class="nav" id="mainNav">
+    <a href="index.html">TRANG CHỦ</a>
+    <a href="uudai.html">ƯU ĐÃI</a>
+    <a href="lienhe.html">LIÊN HỆ</a>
+    <a href="dangnhap.html">ĐĂNG NHẬP</a>
+    <a href="giohang.html">GIỎ HÀNG</a>
+  </nav>
+</header>
+
+
+  <!-- Giỏ hàng -->
+  <section class="cart-section">
+    <h1>Giỏ Hàng Của Bạn</h1>
+
+    <div class="cart-item">
+      <img src="../anh/caffeSua.jfif" alt="Cà phê A">
+      <div class="item-info">
+        <h2>Cà Phê Sữa Đá</h2>
+        <p>Giá: 40.000₫</p>
+        <p>Số lượng: <input type="number" value="1" min="1"></p>
+      </div>
+      <button class="remove-btn">X</button>
+    </div>
+
+    <div class="cart-item">
+      <img src="../anh/caffeDen.jpg" alt="Cà phê B">
+      <div class="item-info">
+        <h2>Cà Phê Đen</h2>
+        <p>Giá: 30.000₫</p>
+        <p>Số lượng: <input type="number" value="2" min="1"></p>
+      </div>
+      <button class="remove-btn">X</button>
+    </div>
+
+    <!-- Tổng cộng -->
+    <div class="total">
+      <p>Tổng cộng: <strong>100.000₫</strong></p>
+      <a href="thanhtoan.html"><button class="checkout-btn">TIẾN HÀNH THANH TOÁN</button></a>
+    </div>
+  </section>
+
+</body>
+</html>

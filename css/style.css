@@ -1,0 +1,248 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color:#e3d3c0;
+}
+
+/* Header */
+.header {
+  background-color: #5A3E2B;
+  color: white;
+  padding: 16px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 24px;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* Banner */
+.slide{
+  width:100%;
+}
+.banner {
+background-image: url("../anh/backgroupMenu.avif");
+background-repeat: no-repeat;
+background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.banner h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.banner button {
+  padding: 10px 24px;
+  background-color: #5A3E2B;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+/* Danh mục */
+.danh-muc {
+  padding: 40px;
+}
+
+.danh-muc h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  margin-left: 10%;
+}
+
+.danh-muc-boxes {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+.danh-muc-boxes p{
+    font-size: 30px;
+}
+
+
+.danh-muc .box {
+  background-color: #F2E7DC;
+  width: 350px;
+  height: 150px;
+  margin-left: 100px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.danh-muc .box:hover{
+    cursor: pointer;
+    background-color: #d0a373;
+}
+
+/* Sản phẩm nổi bật */
+.san-pham {
+  padding: 40px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.tieude {
+  margin-bottom: 20px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  margin-left: 12%;
+}
+
+.san-pham-list {
+  display: flex;
+  flex-wrap: wrap;              /* Cho phép xuống dòng */
+  justify-content: center;      /* Căn giữa ngang */
+  gap: 30px;                    /* Khoảng cách giữa các item */
+  max-width: 1200px;            /* Giới hạn chiều rộng */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.san-pham .item {
+  width: 220px;                 /* Chiều rộng cố định */
+  background-color: #FDF9F3;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+
+.san-pham .item:hover{
+    transform: translateY(-6px);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+}
+
+.san-pham .item img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.san-pham .item button{
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: #ddb384;
+    font-weight: 200;
+}
+
+.san-pham .item button:hover{
+    cursor: pointer;
+    background-color: #ca904f;
+}
+
+.san-pham .ten {
+  font-weight: bold;
+}
+
+.san-pham .gia {
+  color: #5A3E2B;
+}
+
+@media screen and (max-width: 900px) {
+  .danh-muc-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .danh-muc .box {
+    margin: 10px 0;
+    width: 80%;
+  }
+
+  .san-pham-list {
+    flex-direction: column;
+  }
+
+  .san-pham .item {
+    width: 80%;
+    max-width: 250px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  /* Ẩn logo */
+  .logo {
+    display: none;
+  }
+
+  /* Giữ menu nằm ngang và canh giữa */
+  .header {
+    justify-content: center;
+    padding: 12px 10px;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .nav a {
+    margin: 8px 12px;
+    font-size: 10px;
+  }
+}
+
+/* Nút menu 3 gạch (ẩn trên desktop) */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Responsive cho mobile */
+@media screen and (max-width: 900px) {
+  .logo {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    background-color: #5A3E2B;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .nav.show {
+    display: flex;
+  }
+
+  .nav a {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 20px;
+  }
+}

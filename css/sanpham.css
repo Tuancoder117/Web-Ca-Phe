@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fffaf4;
+  color: #333;
+}
+
+/* Header */
+.header {
+  background-color: #5A3E2B;
+  color: white;
+  padding: 16px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 24px;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* Sản phẩm */
+.product-section {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.product-section h1 {
+  text-align: center;
+  color: #5A3E2B;
+  margin-bottom: 40px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.product-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.product-card h3 {
+  margin: 12px 0 6px;
+}
+
+.product-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.price {
+  display: block;
+  font-weight: bold;
+  color: #5A3E2B;
+  margin-bottom: 12px;
+}
+
+.product-card button {
+  padding: 10px 18px;
+  background-color: #5A3E2B;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+  background-color: #7b543c;
+}
+
+@media screen and (max-width: 900px) {
+  .danh-muc-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .danh-muc .box {
+    margin: 10px 0;
+    width: 80%;
+  }
+
+  .san-pham-list {
+    flex-direction: column;
+  }
+
+  .san-pham .item {
+    width: 80%;
+    max-width: 250px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  /* Ẩn logo */
+  .logo {
+    display: none;
+  }
+
+  /* Giữ menu nằm ngang và canh giữa */
+  .header {
+    justify-content: center;
+    padding: 12px 10px;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .nav a {
+    margin: 8px 12px;
+    font-size: 10px;
+  }
+}
+
+/* Nút menu 3 gạch (ẩn trên desktop) */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Responsive cho mobile */
+@media screen and (max-width: 900px) {
+  .logo {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    background-color: #5A3E2B;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .nav.show {
+    display: flex;
+  }
+
+  .nav a {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 20px;
+  }
+}
