@@ -195,3 +195,37 @@ button[type="submit"]:hover {
     padding: 12px 20px;
   }
 }
+.nav {
+  display: flex;
+}
+.subnav {
+   position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  background-color: #fafafa;
+  width: 130%;
+}
+
+.submenu{
+   position: relative;
+}
+
+.subnav a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+    justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.submenu:hover .subnav {
+  display:flex;
+}
+@media screen and (max-width: 900px) {
+  .submenu{
+    display: none;
+  }
+}

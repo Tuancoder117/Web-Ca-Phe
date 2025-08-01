@@ -1,9 +1,9 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #fffaf4;
+  background: #fff;
   color: #333;
-  background-color:#e3d3c0; 
+  background-color:#e3d3c0;
 }
 
 /* Header */
@@ -31,83 +31,54 @@ body {
   text-decoration: underline;
 }
 
-/* Giỏ hàng */
-.cart-section {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
+/* Login section */
+.login-section {
+  padding: 50px 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.cart-section h1 {
-  text-align: center;
-  margin-bottom: 30px;
+.login-section h1 {
+  margin-bottom: 40px;
   color: #5A3E2B;
 }
 
-.cart-item {
-  display: flex;
-  align-items: center;
-  background: #fff;
-  border: 1px solid #ddd;
-  padding: 16px;
-  margin-bottom: 16px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+.login-form {
+  background: #FDF9F3;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
 }
 
-.cart-item img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 6px;
-  margin-right: 16px;
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
 }
 
-.item-info {
-  flex: 1;
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #5A3E2B;
 }
 
-.item-info h2 {
-  margin: 0;
-  font-size: 18px;
-  color: #333;
-}
-
-.item-info p {
-  margin: 8px 0;
-}
-
-.item-info input[type="number"] {
-  width: 60px;
-  padding: 6px;
-  border-radius: 4px;
+.form-group input {
+  width: 100%;
+  padding: 12px;
   border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.remove-btn {
-  background: #ff4d4d;
-  border: none;
-  color: white;
-  font-size: 18px;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background 0.3s ease;
+.form-group input:focus {
+  border-color: #B1784D;
+  outline: none;
+  box-shadow: 0 0 4px rgba(181, 120, 77, 0.4);
 }
 
-.remove-btn:hover {
-  background: #e60000;
-}
-
-/* Tổng */
-.total {
-  text-align: right;
-  margin-top: 30px;
-  font-size: 18px;
-}
-
-.checkout-btn {
+button[type="submit"] {
   background-color: #5A3E2B;
   color: white;
   padding: 12px 24px;
@@ -116,12 +87,26 @@ body {
   cursor: pointer;
   font-weight: bold;
   font-size: 16px;
-  margin-top: 10px;
   transition: background-color 0.3s ease;
+  width: 100%;
 }
 
-.checkout-btn:hover {
+button[type="submit"]:hover {
   background-color: #7b543c;
+}
+
+.note {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.note a {
+  color: #B1784D;
+  text-decoration: none;
+}
+
+.note a:hover {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 900px) {
@@ -208,5 +193,39 @@ body {
     flex-direction: column;
     align-items: flex-start;
     padding: 12px 20px;
+  }
+}
+.nav {
+  display: flex;
+}
+.subnav {
+   position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  background-color: #fafafa;
+  width: 130%;
+}
+
+.submenu{
+   position: relative;
+}
+
+.subnav a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+    justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.submenu:hover .subnav {
+  display:flex;
+}
+@media screen and (max-width: 900px) {
+  .submenu{
+    display: none;
   }
 }
